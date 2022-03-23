@@ -352,7 +352,7 @@ template {
 
 body {
   font-family: sans-serif;
-  background-color: #fff;
+  background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,5 +367,197 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.hero {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 64px;
+  padding: 18px 24px;
+  border: 3px solid rgba(255, 255, 255, 0.289199);
+  border-radius: 15px;
+}
+
+.hero__title {
+  width: 155px;
+  height: 93px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero__title img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__link {
+  text-decoration: none;
+}
+
+.score {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#fff));
+  background: linear-gradient(0deg, #f3f3f3 0%, #fff 100%);
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+  padding: 15px 47px;
+}
+
+.score__title {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  color: #2a45c2;
+  margin-top: auto;
+  text-align: center;
+}
+
+.score__num {
+  font-size: 64px;
+  line-height: 64px;
+  color: #565468;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.button-holder {
+  width: 476px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/triangle.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 254px 287px;
+}
+
+.layer-one {
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  width: 198px;
+  height: 203px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.layer-one:hover .hover-border {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.layer-two {
+  width: 198px;
+  height: 194px;
+  border-radius: 50%;
+  padding: 23px;
+}
+
+.paper {
+  margin-right: 80px;
+  margin-bottom: 24px;
+  background: #2a45c2;
+}
+
+.paper .layer-two {
+  background: #4664f4;
+}
+
+.scissors {
+  margin-bottom: 24px;
+  background: #c76c1b;
+}
+
+.scissors .layer-two {
+  background: #eb9f0e;
+}
+
+.rock {
+  background: #9d1634;
+}
+
+.rock .layer-two {
+  background: #db2e4d;
+}
+
+.rules {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  padding: 11px 36px;
+  cursor: pointer;
+}
+
+.rules__text {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  color: #fff;
+}
+
+.hover-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
+  width: 252px;
+  height: 248px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.indicator {
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 103px;
+  display: none;
+}
+
+.choice {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+.choice:first-child {
+  margin-left: 38px;
+}
+
+.result-title {
+  font-size: 56px;
+  line-height: 66px;
+  color: #fff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.again {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#fff));
+  background: linear-gradient(0deg, #f3f3f3 0%, #fff 100%);
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  color: #3b4262;
+  padding: 15px 60px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
