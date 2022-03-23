@@ -177,3 +177,27 @@
   padding: 15px 60px;
   text-align: center;
 }
+
+.show-holder{
+  width: 938px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  .layer-one{
+    width: 293px;
+    height: 300px;
+    margin: 0;
+  }
+
+  .layer-two{
+    width: 293px;
+    height: 287px;
+    padding: 34px;
+  }
+
+  img{
+    width: 225px;
+    height: 225px;
+  }
+}
