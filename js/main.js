@@ -60,66 +60,48 @@ function compareIt() {
     } else if(elFakeRandom == 2){
       elResultTitle.innerText = "YOU LOSE";
 
-      if(num <= 0){
-        elScoreNum.innerText = 0;
-      } else{
-        num--;
-        elScoreNum.innerText = num;
-      }
+      num--;
+      elScoreNum.innerText = num;
     } else{
       elResultTitle.innerText = "YOU WIN";
 
       num++;
-      if(num <= 0){
-        elScoreNum.innerText = 0;
-      } else{
-        elScoreNum.innerText = num;
-      }
+      elScoreNum.innerText = num;
     }
   } else if(elCount == 2){
     if(elFakeRandom == 1){
       elResultTitle.innerText = "YOU WIN";
 
       num++;
-      if(num <= 0){
-        elScoreNum.innerText = 0;
-      } else{
-        elScoreNum.innerText = num;
-      }
+      elScoreNum.innerText = num;
     } else if(elFakeRandom == 2){
       elResultTitle.innerText = "DRAW";
     } else{
       elResultTitle.innerText = "YOU LOSE";
 
-      if(num <= 0){
-        elScoreNum.innerText = 0;
-      } else{
-        num--;
-        elScoreNum.innerText = num;
-      }
+      num--;
+      elScoreNum.innerText = num;
     }
   } else{
     if(elFakeRandom == 1){
       elResultTitle.innerText = "YOU LOSE";
 
-      if(num <= 0){
-        elScoreNum.innerText = 0;
-      } else{
-        num--;
-        elScoreNum.innerText = num;
-      }
+      num--;
+      elScoreNum.innerText = num;
     } else if(elFakeRandom == 2){
       elResultTitle.innerText = "YOU WIN";
 
       num++;
-      if(num <= 0){
-        elScoreNum.innerText = 0;
-      } else{
-        elScoreNum.innerText = num;
-      }
+      elScoreNum.innerText = num;
     } else{
       elResultTitle.innerText = "DRAW";
     }
+  }
+
+  if(num == 5){
+    alert("Game over. You won");
+  } else if(num == -5){
+    alert("Game over. You lose");
   }
 }
 
